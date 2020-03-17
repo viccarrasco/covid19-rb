@@ -2,7 +2,7 @@
 
 module Statistics
   class Global
-    def self.retrieve
+    def self.retrieve(**options)
       rep = Repositories::Statistics.new
       JSON.parse(rep.global).to_json
     end
