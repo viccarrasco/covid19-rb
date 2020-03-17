@@ -1,10 +1,15 @@
 # frozen_string_literal: true
 
 module Statistics
-  class Global
+  class Global < BaseResource
     def self.retrieve(**options)
-      rep = Repositories::Statistics.new
-      JSON.parse(rep.global).to_json
+      present(repository.global)
+    end
+
+    private
+
+    def self.repository
+      Repositories::Statistics.new
     end
   end
 end
