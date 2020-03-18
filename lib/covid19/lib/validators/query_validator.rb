@@ -20,7 +20,7 @@ module Validators
     def valid?(query:)
       return true if query.nil?
       valid = query.key?(:countryTotal)    ? valid_country?(key: :countryTotal, query: query)    : true
-      valid = query.key?(:countryTimeline) ? valid_country?(key: :countryTimeline, query: query) : true
+      valid = query.key?(:countryTimeline) ? valid_country?(key: :countryTimeline, query: query) : valid
       valid
     end
 
