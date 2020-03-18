@@ -17,18 +17,17 @@ module Validators
       tv ug ua ae uk us um uy uz vu ve vn vg vi wf eh ye zm zw
     ].freeze
 
-    def validate(query:)
+    def valid?(query:)
       return true if query.nil?
-
-      valid_country?(query)
+      valid = query.key?(:countryTotal)    ? valid_country?(key: :countryTotal, query: query)    : true
+      valid = query.key?(:countryTimeline) ? valid_country?(key: :countryTimeline, query: query) : valid
+      valid
     end
 
     private
 
-    def valid_country?(query)
-      return true if query[:country].nil?
-
-      COUNTRIES.include?(query[:country])
+    def valid_country?(key:, query:)
+      query[key].nil? ? false : COUNTRIES.include?(query[key].downcase)
     end
   end
 end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-module Statistics
-  class Global < BaseResource
+module Timelines
+  class FullTimeline < BaseResource
     def self.retrieve(**options)
       present(repository.global)
     end
@@ -9,7 +9,7 @@ module Statistics
     private
 
     def self.repository
-      Repositories::Statistics.new
+      Repositories::Timeline.new
     end
   end
 end
