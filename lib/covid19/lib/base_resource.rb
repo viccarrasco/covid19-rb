@@ -7,7 +7,7 @@ class BaseResource
     raise 'NotImplementedException::retrieve'
   end
 
-  def self.by_country(country:)
+  def self.by(country:)
     present_as_json(repository.by_country(country: country))
   end
 
