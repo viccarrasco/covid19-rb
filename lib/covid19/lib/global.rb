@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-module Statistics
-  class Global < BaseResource
+module Covid19
+  class GlobalStatistics < BaseResource
     def self.retrieve(**options)
-      present(repository.global)
+      present_as_json(repository.global)
     end
 
     private

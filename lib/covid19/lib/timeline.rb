@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-module Timelines
-  class FullTimeline < BaseResource
+module Covid19
+  class Timeline < BaseResource
     def self.retrieve(**options)
-      present(repository.global)
+      present_as_json(repository.global)
     end
 
     private
