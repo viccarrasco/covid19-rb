@@ -9,16 +9,16 @@ end
 RSpec.describe Covid19::Timeline do
   describe 'full' do
     it 'responds with json' do
-      full_timeline = Covid19::Timeline.by_country(country: 'it')
+      full_timeline = Covid19::Timeline.by(country: 'it')
       expect(full_timeline.is_a?(String)).to be(true)
     end
   end
 
-  describe 'by_country' do
-    subject { Covid19::Timeline.by_country(country: country) }
+  describe 'by' do
+    subject { Covid19::Timeline.by(country: country) }
 
     context 'when country is set' do
-      let(:country) { 'de' }
+      let(:country) { 'it' }
       it 'returns json' do
         expect(subject.is_a?(String)).to be(true)
       end
@@ -41,8 +41,8 @@ RSpec.describe Covid19::GlobalStatistics do
     end
   end
 
-  describe 'by_country' do
-    subject { Covid19::GlobalStatistics.by_country(country: country) }
+  describe 'by' do
+    subject { Covid19::GlobalStatistics.by(country: country) }
 
     context 'when country is set' do
       let(:country) { 'mx' }
@@ -74,7 +74,6 @@ RSpec.describe Covid19::News do
 
       it 'responds with json with the provided source' do
         news = Covid19::News.retrieve(rss: feed)
-        byebug
         expect(news.is_a?(String)).to be(true)
       end
     end
