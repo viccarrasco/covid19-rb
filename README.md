@@ -7,7 +7,7 @@ This tool's goal is to create an easy way to start building projects which have 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'covid19'
+gem 'covid19-rb'
 ```
 
 And then execute:

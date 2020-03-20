@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    covid19 (0.1.0)
+    covid19-rb (0.1.0)
       arssene
 
 GEM
@@ -68,7 +68,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   byebug
-  covid19!
+  covid19-rb!
   rake (~> 12.0)
   rspec (~> 3.0)
 

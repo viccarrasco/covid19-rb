@@ -3,7 +3,7 @@
 require_relative 'lib/covid19/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'covid19'
+  spec.name          = 'covid19-rb'
   spec.version       = Covid19::VERSION
   spec.authors       = ['Vic Carrasco']
   spec.email         = ['1703579+viccarrasco@users.noreply.github.com']
