@@ -1,21 +1,19 @@
 # frozen_string_literal: true
 
 class BaseResource
+  extend Presenters
+
   def self.retrieve(**options)
     raise 'NotImplementedException::retrieve'
   end
 
   def self.by_country(country:)
-    present(repository.by_country(country: country))
+    present_as_json(repository.by_country(country: country))
   end
 
   private
 
   def self.repository
     raise 'NotImplementedException::repository'
-  end
-
-  def self.present(data, presenter: Presenters::JsonPresenter.new)
-    presenter.present(data)
   end
 end
