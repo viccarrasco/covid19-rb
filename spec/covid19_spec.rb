@@ -9,7 +9,7 @@ end
 RSpec.describe Covid19::Timeline do
   describe 'full' do
     it 'responds with json' do
-      full_timeline = Covid19::Timeline.retrieve
+      full_timeline = Covid19::Timeline.by_country(country: 'it')
       expect(full_timeline.is_a?(String)).to be(true)
     end
   end
@@ -74,6 +74,7 @@ RSpec.describe Covid19::News do
 
       it 'responds with json with the provided source' do
         news = Covid19::News.retrieve(rss: feed)
+        byebug
         expect(news.is_a?(String)).to be(true)
       end
     end
