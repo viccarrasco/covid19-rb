@@ -1,4 +1,4 @@
-# covid-19-rb
+# covid19-rb
 
 This tool's goal is to create an easy way to start building projects which have as goal fighting the unprecedented virus **Covid-19**. If you stumble upon this gem, please share it as someone might find it useful.
 
@@ -326,7 +326,7 @@ tv ug ua ae uk us um uy uz vu ve vn vg vi wf eh ye zm zw ]
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/viccarrasco/covid19. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/covid19/blob/master/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/viccarrasco/covid19-rb. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/viccarrasco/covid19-rb/blob/master/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -334,4 +334,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Covid19 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/covid19/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Covid19 project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/viccarrasco/covid19-rb/blob/master/CODE_OF_CONDUCT.md).
