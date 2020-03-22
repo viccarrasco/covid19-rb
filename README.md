@@ -2,7 +2,7 @@
 
 This tool's goal is to create an easy way to start building projects which have as goal fighting the unprecedented virus **Covid-19**. If you stumble upon this gem, please share it as someone might find it useful.
 
-This is mainly a wrapper for [The Virus Tracker API](https://thevirustracker.com/api)
+This is mainly a wrapper for [The Virus Tracker API](https://thevirustracker.com/api) whom have as sources: WHO, CDC, ECDC, NHC, DXY..
 
 ## Installation
 
