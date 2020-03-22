@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['1703579+viccarrasco@users.noreply.github.com']
 
   spec.summary       = 'Fight Covid-19'
-  spec.description   = 'Write a longer description or delete this line.'
+  spec.description   = 'Helps developers integrate information regarding Covid-19 in their webistes'
   spec.homepage      = 'https://github.com/viccarrasco/covid-19'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')

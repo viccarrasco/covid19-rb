@@ -23,10 +23,9 @@ module Repositories
     def entries_to_hash(entries)
       entries.map.with_index do |entry, index|
         entries[index] = {
-          title:  entry.title,
-          link:   entry.link.strip.chomp,
-          date:   entry.publication_date.to_s.strip.chomp,
-          description: entry.description.strip.chomp
+          title: entry.title,
+          link: entry.link.strip.chomp,
+          date: entry.publication_date.to_s.strip.chomp
         }
       end
     end
