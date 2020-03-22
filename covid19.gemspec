@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = 'Fight Covid-19'
   spec.description   = 'Helps developers integrate information regarding Covid-19 in their webistes'
-  spec.homepage      = 'https://github.com/viccarrasco/covid-19'
+  spec.homepage      = 'https://github.com/viccarrasco/covid19-rb'
   spec.license       = 'MIT'
   spec.required_ruby_version = Gem::Requirement.new('>= 2.3.0')
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
     spec.metadata['homepage_uri']    = spec.homepage
     spec.metadata['source_code_uri'] = spec.homepage
-    spec.metadata['changelog_uri'] = 'https://github.com/viccarrasco/covid-19/blob/master/CHANGE_LOG.md'
+    spec.metadata['changelog_uri'] = 'https://github.com/viccarrasco/covid19-rb/blob/master/CHANGE_LOG.md'
   else
     raise 'RubyGems 2.0 or newer is required to protect against ' \
       'public gem pushes.'
