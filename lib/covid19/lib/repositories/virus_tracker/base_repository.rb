@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class BaseRepository
-  GLOBAL_STATS_URL = 'https://thevirustracker.com/'
+  GLOBAL_STATS_URL = 'https://api.thevirustracker.com/'
   DEFAULT_RESOURCE = 'free-api'
 
   attr_reader :query_validator
@@ -27,8 +27,8 @@ class BaseRepository
     else
       { error: 'Invalid parameter sequence' }.to_json
     end
-  rescue => exception
-    { error: "Unexpected Error: #{exception}" }.to_json
+  rescue StandardError => e
+    { error: "Unexpected Error: #{e}" }.to_json
   end
 
   def ping_api(uri, **options)
